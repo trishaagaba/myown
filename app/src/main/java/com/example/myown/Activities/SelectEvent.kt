@@ -1,41 +1,41 @@
 package com.example.myown.Activities
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.widget.TextView
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat.startActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.myown.R
-import com.example.myown.Activities.databinding.ActivitySelectEventBinding
+
 
 class SelectEvent : AppCompatActivity() {
 
-    private lateinit var appBarConfiguration: AppBarConfiguration
-    private lateinit var binding: ActivitySelectEventBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivitySelectEventBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        val selectEvent = findViewById<TextView>(R.id.selectEventTime)
 
-        setSupportActionBar(binding.toolbar)
-
-        val navController = findNavController(R.id.nav_host_fragment_content_select_event)
-        appBarConfiguration = AppBarConfiguration(navController.graph)
-        setupActionBarWithNavController(navController, appBarConfiguration)
-
-        binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+        selectEvent.setOnClickListener {
+            setTime()
         }
+
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment_content_select_event)
-        return navController.navigateUp(appBarConfiguration)
-                || super.onSupportNavigateUp()
+
+    public fun setTime() {
+        val intent = Intent(this, CreateRoutine::class.java)
+        intent.putExtra("timeSet", true)
+        startActivity(intent)
+
     }
+
+
 }
+
