@@ -19,6 +19,12 @@
             android:layout_height="wrap_content"
             android:background="#F6F61C"
             >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/backbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:src="@drawable/ic_arrow_back"></androidx.appcompat.widget.AppCompatImageView>
 
 
             <TextView
@@ -27,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed"
                 android:text="Select Routine"
-
+                android:layout_gravity="center"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 />
@@ -58,7 +64,7 @@
         android:paddingTop="20dp">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/SelectRoutine"
+            android:id="@+id/selectRoutineBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_plus"

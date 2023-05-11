@@ -27,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed"
                 android:text="Select Event"
-
+                android:layout_gravity="center"
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 />

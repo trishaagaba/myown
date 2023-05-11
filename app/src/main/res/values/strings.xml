@@ -14,4 +14,5 @@
     <string name="title_activity_select_routine">SelectRoutine</string>
     <string name="title_activity_create_routine">CreateRoutine</string>
     <string name="title_activity_select_event">SelectEvent</string>
+    <string name="title_activity_select_thing">SelectThing</string>
 </resources>

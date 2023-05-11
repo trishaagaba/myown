@@ -20,6 +20,7 @@ class SelectEvent : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        setContentView(R.layout.activity_select_event)
         val selectEvent = findViewById<TextView>(R.id.selectEventTime)
 
         selectEvent.setOnClickListener {
