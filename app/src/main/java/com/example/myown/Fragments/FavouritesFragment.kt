@@ -33,4 +33,3 @@ class FavouritesFragment : Fragment() {
      startActivity(intent)
     }
 }
-//com.example.myown.Activities.SelectRoutine::class.java

@@ -12,20 +12,21 @@
         android:theme="@style/Theme.Myown"
         tools:targetApi="31">
         <activity
-            android:name=".SelectThing"
+            android:name=".Activities.CreateRoutine"
+            android:exported="false"
+            android:label="CreateRoutine"
+            android:theme="@style/Theme.Myown.NoActionBar" />
+        <activity
+            android:name=".Activities.SelectThing"
             android:exported="false"
             android:label="@string/title_activity_select_thing"
             android:theme="@style/Theme.Myown.NoActionBar" />
         <activity
-            android:name=".SelectEvent"
+            android:name=".Activities.SelectEvent"
             android:exported="false"
             android:label="@string/title_activity_select_event"
             android:theme="@style/Theme.Myown.NoActionBar" />
-        <activity
-            android:name=".CreateRoutine"
-            android:exported="false"
-            android:label="@string/title_activity_create_routine"
-            android:theme="@style/Theme.Myown.NoActionBar" />
+
         <activity
             android:name=".Activities.SelectRoutine"
             android:exported="false"

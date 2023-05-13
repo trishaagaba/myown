@@ -15,8 +15,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class SelectRoutine : AppCompatActivity() {
 
-    private lateinit var appBarConfiguration: AppBarConfiguration
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

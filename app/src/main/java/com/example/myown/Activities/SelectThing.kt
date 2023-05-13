@@ -12,8 +12,6 @@ import com.example.myown.R
 
 class SelectThing : AppCompatActivity() {
 
-    private lateinit var appBarConfiguration: AppBarConfiguration
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
